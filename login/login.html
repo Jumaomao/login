@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>login</title>
+        <link rel="stylesheet" href="login.css">
+        <script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+        <script src="login.js"></script>
+    </head>
+    <body>
+        <div class="lg-container">
+            <div class="lg-main">
+                <div class="lg-header">
+                    <h1 class="title">登录</h1>
+                    <h2>吃鸡是不可能的，这辈子都不可能吃鸡的。</h2>
+                </div>
+                <div class="lg-form">
+                    <div class="lg-tab">
+                        <button id="id-tab-signup" type="button">注册</button>
+                        <button id="id-tab-login" class="blue" type="button">登录</button>
+                    </div>
+                    <div id="id-div-login">
+                        <div class="lg-form-textinput">
+                            <div class="lg-input-wrapper">
+                                <input id="id-input-login-username" type="text" placeholder="用户名">
+                            </div>
+                            <div class="lg-input-wrapper">
+                                <input id="id-input-login-password" type="text" placeholder="密码">
+                            </div>
+                        </div>
+                        <button id="id-button-login" class="button-big" type="button" name="button">进入</button>
+                    </div>
+                    <div id="id-div-signup" class="none">
+                        <div class="lg-form-textinput">
+                            <div class="lg-input-wrapper">
+                                <input id="id-input-signup-username" type="text" onchange="signupCheck(this.value)" placeholder="用户名(必须字母开头且不少于六位)">
+                            </div>
+                            <div class="lg-input-wrapper">
+                                <input id="id-input-signup-nickname" type="text" onchange="nicknameCheck(this.value)" placeholder="昵称(不能使用空格)">
+                            </div>
+                            <div class="lg-input-wrapper">
+                                <input id="id-input-signup-password" type="text" onchange="passwordCheck(this.value)" placeholder="密码(必须数字和字母组合且不少于六位)">
+                            </div>
+                            <div class="lg-input-wrapper">
+                                <input id="id-input-signup-password2" type="text" onchange="passwordConfirm(this.value)" placeholder="确认密码">
+                            </div>
+                            <div class="lg-input-wrapper">
+                                <input id="id-input-signup-Email" type="text" placeholder="邮箱(可不填写)">
+                            </div>
+                        </div>
+                        <button id="id-button-signup" class="button-big" type="button" name="button">注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
